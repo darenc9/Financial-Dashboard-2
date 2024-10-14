@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import Dashboard from "./Pages/dashboard";
+import Dashboard from "./Pages/Dashboard/dashboard";
 
 const App = () => {
   return (
