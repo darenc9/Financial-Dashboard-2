@@ -6,25 +6,16 @@ import styles from "./Dashboard.module.css";
 const Dashboard = () => {
   const [accounts, setAccounts] = useState([]);
 
+  // use this this and not useEffect beacuse this is synchronous
+  // and ensures component only renders when the data is fetched, this will prevent flicing as i didn't want to incoporate a loading spinner
+
   useLayoutEffect(() => {
     const fetchBankAccounts = async () => {
-      const response = [
-        {
-          accountName: "Savings Account",
-          balance: "5,000",
-          currency: "CAD",
+      const response = await fetch("http://localhost:8080/balances", {
+        headers: {
+          "Content-Type": "application/json",
         },
-        {
-          accountName: "Chequing Account",
-          balance: "1,200",
-          currency: "CAD",
-        },
-        {
-          accountName: "Investment Account",
-          currency: "CAD",
-          balance: "5,000",
-        },
-      ];
+      });
       setAccounts(response);
     };
     fetchBankAccounts();

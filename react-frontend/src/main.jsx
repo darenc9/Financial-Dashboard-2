@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 
-createRoot(document.getElementById("root")).render(
+createRoot(document.getElementById("balance")).render(
   <StrictMode>
     <Router>
       <App />
