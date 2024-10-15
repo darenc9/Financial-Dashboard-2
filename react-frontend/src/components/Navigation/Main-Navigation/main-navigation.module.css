@@ -1,0 +1,15 @@
+.mainHeaderNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerImage {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: none;
+}

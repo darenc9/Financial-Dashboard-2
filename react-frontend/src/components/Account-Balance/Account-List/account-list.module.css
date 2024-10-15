@@ -1,0 +1,63 @@
+.accountList {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: var(--secondary-transition);
+}
+
+.account:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.accountDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+  color: #333333;
+}
+
+.balanceAndButtonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.balance {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.noAccounts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.noAccounts p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}

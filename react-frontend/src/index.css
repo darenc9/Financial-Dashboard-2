@@ -1,11 +1,18 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  --primary-color: #0d99ff;
+  --secondary-color: #bde3ff;
+  --text-color: #000000;
+  --background-color: #ffffff;
+  --default-transition: background-color 0.3s ease, color 0.3s ease;
+  --secondary-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  --border-radius: 8px;
+
   color: rgba(0, 0, 0, 0.87);
-  background-color: #d3d3d3;
+  background-color: var(--background-color);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,7 +21,4 @@
 
 body {
   margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
 }
