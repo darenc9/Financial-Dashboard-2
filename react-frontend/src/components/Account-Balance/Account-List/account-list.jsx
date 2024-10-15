@@ -41,9 +41,11 @@ const AccountList = ({ accounts }) => {
 
   const categorizedAccounts = categorizeAccounts();
 
-  // Function to handle expanding the accordion
+  // handling the expansion of the accordion and ensuring if there are no accounts, then no click
   const handleExpand = (index) => {
-    setExpandedCategory(expandedCategory === index ? null : index);
+    if (categorizedAccounts[index].count > 0) {
+      setExpandedCategory(expandedCategory === index ? null : index);
+    }
   };
 
   // Display a fallback message if no accounts are available
