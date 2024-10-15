@@ -10,22 +10,19 @@ const Dashboard = () => {
     const fetchBankAccounts = async () => {
       const response = [
         {
-          type: "Banking Accounts",
-          count: 2,
-          balance: "6,200.00 CAD",
-          buttonText: "VIEW",
+          accountName: "Savings Account",
+          balance: "5,000",
+          currency: "CAD",
         },
         {
-          type: "Investment Account",
-          count: 1,
-          balance: "1,200.00 CAD",
-          buttonText: "VIEW",
+          accountName: "Chequing Account",
+          balance: "1,200",
+          currency: "CAD",
         },
         {
-          type: "Credit Card Account",
-          count: 0,
-          balance: "N/A",
-          buttonText: "OPEN CARD",
+          accountName: "Investment Account",
+          currency: "CAD",
+          balance: "5,000",
         },
       ];
       setAccounts(response);
