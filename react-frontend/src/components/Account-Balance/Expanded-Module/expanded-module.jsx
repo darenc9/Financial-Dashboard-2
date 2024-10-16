@@ -6,6 +6,11 @@ import styles from "./expanded-module.module.css";
 const ExpandedModule = ({ accounts, setExpandedCategory }) => {
   return (
     <>
+      {accounts &&
+        accounts.length > 0 &&
+        accounts.map((account, index) => (
+          <AccountDetails key={index} accounts={account} />
+        ))}
       <div className={styles.expandedModule}>
         {accounts.map((account, index) => (
           <AccountDetails key={index} accounts={account} />
