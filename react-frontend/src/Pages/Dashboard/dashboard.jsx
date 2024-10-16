@@ -23,9 +23,15 @@ const Dashboard = () => {
 
     fetchBankAccounts();
   }, []);
+
+  console.log(accounts);
+
   return (
     <div className={styles.dashboardContainer}>
-      <AccountList accounts={accounts} />
+      <div className={styles.welcomeText}>
+        <h1>Welcome</h1>
+      </div>
+      {accounts && <AccountList accounts={accounts} />}{" "}
     </div>
   );
 };
