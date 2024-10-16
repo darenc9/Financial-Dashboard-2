@@ -1,2 +1,9 @@
 [build]
   workingDirectory = "springboot-backend"
+  
+[phases.build]
+commands = ["mvn clean package"]
+
+[dependencies]
+runtime = "openjdk-21"
+build = ["maven"]
