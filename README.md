@@ -65,7 +65,7 @@ mvn clean install
 2. Run the Spring Boot app:
 
 ```bash
-./mvn spring-boot:run
+mvn spring-boot:run
 ```
 
 3. The backend will run on `http://localhost:8080`. To use the API:
